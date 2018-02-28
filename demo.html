@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //ES5默认参数书写
+    function Someone(name,age) {
+        this.name=name||'zhangsan';
+        this.age=age||18;
+    }
+    var zhangsan=new Someone();
+    console.log(zhangsan)
+    //ES6默认参数书写
+    //写入形参中并用等号赋值个形参
+    function Person(name='Tom',age=18) {
+        this.name=name;
+        this,age=age;
+    }
+    var zhangsan=new Person();
+    console.log(zhangsan)
+</script>
+</body>
+</html>
